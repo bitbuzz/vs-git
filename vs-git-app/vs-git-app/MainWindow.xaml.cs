@@ -22,7 +22,6 @@ namespace vs_git_app
 	{
 		public MainWindow()
 		{
-			// Test
 			InitializeComponent();
 		}
 	}
