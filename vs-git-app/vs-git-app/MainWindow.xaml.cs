@@ -27,7 +27,7 @@ namespace vs_git_app
 
 		private void startBtn_Click(object sender, RoutedEventArgs e)
 		{
-
+			MessageBox.Show("testing");
 		}
 	}
 }
