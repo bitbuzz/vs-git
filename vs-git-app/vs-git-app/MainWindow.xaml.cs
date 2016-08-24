@@ -24,5 +24,10 @@ namespace vs_git_app
 		{
 			InitializeComponent();
 		}
+
+		private void startBtn_Click(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("testing");
+		}
 	}
 }
