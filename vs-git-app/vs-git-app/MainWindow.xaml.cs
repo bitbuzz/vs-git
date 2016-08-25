@@ -24,7 +24,7 @@ namespace vs_git_app
 		{
 			InitializeComponent();
 		}
-
+		
 		private int Add(int a, int b)
 		{
 			return a + b;
@@ -35,14 +35,13 @@ namespace vs_git_app
 			return a - b;
 		}
 
-		private string ConcatenateStrings(string a, string b, string c)
+		private string ConcatenateStrings(string a, string b)
 		{
-			return a + ", " + b + ", " + c;
+			return a + ", " + b;
 		}
 
 		private void startBtn_Click(object sender, RoutedEventArgs e)
 		{
-			// Issue #1
 			MessageBox.Show("testing 1, 2, 3...");
 		}
 	}
