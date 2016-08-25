@@ -35,6 +35,11 @@ namespace vs_git_app
 			return a - b;
 		}
 
+		private string ConcatenateStrings(string a, string b, string c)
+		{
+			return a + ", " + b + ", " + c;
+		}
+
 		private void startBtn_Click(object sender, RoutedEventArgs e)
 		{
 			// Issue #1
