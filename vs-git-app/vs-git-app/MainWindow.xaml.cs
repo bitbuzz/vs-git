@@ -40,6 +40,12 @@ namespace vs_git_app
 			return a / b;
 		}
 
+		private int Multiply(int a, int b)
+		{
+			return a * b;
+		}
+
+
 		private string ConcatenateStrings(string a, string b)
 		{
 			return a + ", " + b;
