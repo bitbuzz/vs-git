@@ -37,7 +37,8 @@ namespace vs_git_app
 
 		private int Divide(int a, int b)
 		{
-			return a / (b + 3);
+		  // Simple divide
+			return a / b;
 		}
 
 		private string ConcatenateStrings(string a, string b)
