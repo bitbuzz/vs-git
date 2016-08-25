@@ -45,7 +45,6 @@ namespace vs_git_app
 			return a * b;
 		}
 
-
 		private string ConcatenateStrings(string a, string b)
 		{
 			return a + ", " + b;
