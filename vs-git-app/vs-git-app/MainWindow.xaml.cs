@@ -37,8 +37,12 @@ namespace vs_git_app
 
 		private int Divide(int a, int b)
 		{
-		  // Simple divide
 			return a / b;
+		}
+
+		private int Multiply(int a, int b)
+		{
+			return a * b;
 		}
 
 		private string ConcatenateStrings(string a, string b)
