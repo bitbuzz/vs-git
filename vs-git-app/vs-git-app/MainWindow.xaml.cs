@@ -25,6 +25,11 @@ namespace vs_git_app
 			InitializeComponent();
 		}
 
+		private int Add(int a, int b)
+		{
+			return a + b;
+		}
+
 		private void startBtn_Click(object sender, RoutedEventArgs e)
 		{
 			// Issue #1
