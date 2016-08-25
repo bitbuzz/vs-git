@@ -25,9 +25,9 @@ namespace vs_git_app
 			InitializeComponent();
 		}
 
-		private string CreateString()
+		private string ConcatenateStrings(string a, string b)
 		{
-			return "New string.";
+			return a + ", " + b;
 		}
 
 		private void startBtn_Click(object sender, RoutedEventArgs e)
