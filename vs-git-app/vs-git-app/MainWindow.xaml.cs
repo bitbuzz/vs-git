@@ -25,6 +25,11 @@ namespace vs_git_app
 			InitializeComponent();
 		}
 
+		private string CreateString()
+		{
+			return "New string.";
+		}
+
 		private void startBtn_Click(object sender, RoutedEventArgs e)
 		{
 			// Issue #1
