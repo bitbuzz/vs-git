@@ -25,6 +25,13 @@ namespace vs_git_app
 			InitializeComponent();
 		}
 		
+		private string ReverseString(string input)
+		{
+			char[] charArray = input.ToCharArray();
+			Array.Reverse(charArray);
+			return new string(charArray);
+		}
+
 		private int Add(int a, int b)
 		{
 			return a + b;
