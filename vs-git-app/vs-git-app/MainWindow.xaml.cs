@@ -20,36 +20,31 @@ namespace vs_git_app
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		private MyCalculator _myCalculator = new MyCalculator();
+
 		public MainWindow()
 		{
 			InitializeComponent();
 		}
-		
-		private string ReverseString(string input)
-		{
-			char[] charArray = input.ToCharArray();
-			Array.Reverse(charArray);
-			return new string(charArray);
-		}
 
 		private int Add(int a, int b)
 		{
-			return a + b;
+			return _myCalculator.Add(a, b);
 		}
 
 		private int Subract(int a, int b)
 		{
-			return a - b;
+			return _myCalculator.Subract(a, b);
 		}
 
 		private int Divide(int a, int b)
 		{
-			return a / b;
+			return _myCalculator.Divide(a, b);
 		}
 
 		private int Multiply(int a, int b)
 		{
-			return a * b;
+			return _myCalculator.Multiply(a, b);
 		}
 
 		private string ConcatenateStrings(string a, string b)
@@ -57,9 +52,16 @@ namespace vs_git_app
 			return a + ", " + b;
 		}
 
+		private string ReverseString(string input)
+		{
+			char[] charArray = input.ToCharArray();
+			Array.Reverse(charArray);
+			return new string(charArray);
+		}
+
 		private void startBtn_Click(object sender, RoutedEventArgs e)
 		{
-			MessageBox.Show("testing 1, 2, 3...");
+			MessageBox.Show("3 times 4 reversed is " + ReverseString(Multiply(3, 4).ToString()) + "...");
 		}
 	}
 }
