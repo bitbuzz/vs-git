@@ -27,9 +27,9 @@ namespace vs_git_app
 			InitializeComponent();
 		}
 
-		private int Add(int a, int b)
+		private int Add(List<int> values)
 		{
-			return _myCalculator.Add(a, b);
+			return _myCalculator.Add(values);
 		}
 
 		private int Subract(int a, int b)

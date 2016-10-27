@@ -8,9 +8,15 @@ namespace vs_git_app
 {
 	public class MyCalculator
 	{
-		internal int Add(int a, int b)
+		internal int Add(List<int> values)
 		{
-			return a + b;
+			int total = 0;
+			foreach(var i in values)
+			{
+				total += i;
+			}
+
+			return total;
 		}
 
 		internal int Subract(int a, int b)
