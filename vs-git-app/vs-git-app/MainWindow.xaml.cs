@@ -32,9 +32,9 @@ namespace vs_git_app
 			return _myCalculator.Add(values);
 		}
 
-		private int Subract(int a, int b)
+		private int Subract(List<int> values)
 		{
-			return _myCalculator.Subract(a, b);
+			return _myCalculator.Subract(values);
 		}
 
 		private int Divide(int a, int b)

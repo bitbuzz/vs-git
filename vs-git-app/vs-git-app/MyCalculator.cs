@@ -19,9 +19,15 @@ namespace vs_git_app
 			return total;
 		}
 
-		internal int Subract(int a, int b)
+		internal int Subract(List<int> values)
 		{
-			return a - b;
+			int total = 0;
+			foreach (var i in values)
+			{
+				total -= i;
+			}
+
+			return total;
 		}
 
 		internal int Divide(int a, int b)
